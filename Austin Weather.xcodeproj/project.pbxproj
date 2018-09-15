@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		13EEC913212A593400B77570 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EEC912212A593400B77570 /* AppDelegate.swift */; };
-		13EEC915212A593400B77570 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EEC914212A593400B77570 /* ViewController.swift */; };
 		13EEC918212A593400B77570 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13EEC916212A593400B77570 /* Main.storyboard */; };
 		13EEC91A212A593500B77570 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13EEC919212A593500B77570 /* Assets.xcassets */; };
 		13EEC91D212A593500B77570 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13EEC91B212A593500B77570 /* LaunchScreen.storyboard */; };
+		13EEC925212A594200B77570 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EEC924212A594200B77570 /* Weather.swift */; };
+		13EEC92721332D6F00B77570 /* WeatherTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EEC92621332D6F00B77570 /* WeatherTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		13EEC90F212A593400B77570 /* JSON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSON.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13EEC90F212A593400B77570 /* Austin Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Austin Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13EEC912212A593400B77570 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		13EEC914212A593400B77570 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		13EEC917212A593400B77570 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		13EEC919212A593500B77570 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13EEC91C212A593500B77570 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13EEC91E212A593500B77570 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13EEC924212A594200B77570 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		13EEC92621332D6F00B77570 /* WeatherTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +48,7 @@
 		13EEC910212A593400B77570 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13EEC90F212A593400B77570 /* JSON.app */,
+				13EEC90F212A593400B77570 /* Austin Weather.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,8 +56,9 @@
 		13EEC911212A593400B77570 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
+				13EEC924212A594200B77570 /* Weather.swift */,
 				13EEC912212A593400B77570 /* AppDelegate.swift */,
-				13EEC914212A593400B77570 /* ViewController.swift */,
+				13EEC92621332D6F00B77570 /* WeatherTableViewController.swift */,
 				13EEC916212A593400B77570 /* Main.storyboard */,
 				13EEC919212A593500B77570 /* Assets.xcassets */,
 				13EEC91B212A593500B77570 /* LaunchScreen.storyboard */,
@@ -67,9 +70,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		13EEC90E212A593400B77570 /* JSON */ = {
+		13EEC90E212A593400B77570 /* Austin Weather */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13EEC921212A593500B77570 /* Build configuration list for PBXNativeTarget "JSON" */;
+			buildConfigurationList = 13EEC921212A593500B77570 /* Build configuration list for PBXNativeTarget "Austin Weather" */;
 			buildPhases = (
 				13EEC90B212A593400B77570 /* Sources */,
 				13EEC90C212A593400B77570 /* Frameworks */,
@@ -79,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = JSON;
+			name = "Austin Weather";
 			productName = JSON;
-			productReference = 13EEC90F212A593400B77570 /* JSON.app */;
+			productReference = 13EEC90F212A593400B77570 /* Austin Weather.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -96,10 +99,11 @@
 				TargetAttributes = {
 					13EEC90E212A593400B77570 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
-			buildConfigurationList = 13EEC90A212A593400B77570 /* Build configuration list for PBXProject "JSON" */;
+			buildConfigurationList = 13EEC90A212A593400B77570 /* Build configuration list for PBXProject "Austin Weather" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,7 +116,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13EEC90E212A593400B77570 /* JSON */,
+				13EEC90E212A593400B77570 /* Austin Weather */,
 			);
 		};
 /* End PBXProject section */
@@ -135,7 +139,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13EEC915212A593400B77570 /* ViewController.swift in Sources */,
+				13EEC92721332D6F00B77570 /* WeatherTableViewController.swift in Sources */,
+				13EEC925212A594200B77570 /* Weather.swift in Sources */,
 				13EEC913212A593400B77570 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,9 +292,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.chrisconner.JSON;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrisconner.AUSTINWEATHER;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -305,9 +310,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.chrisconner.JSON;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrisconner.AUSTINWEATHER;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -315,7 +320,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		13EEC90A212A593400B77570 /* Build configuration list for PBXProject "JSON" */ = {
+		13EEC90A212A593400B77570 /* Build configuration list for PBXProject "Austin Weather" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13EEC91F212A593500B77570 /* Debug */,
@@ -324,7 +329,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13EEC921212A593500B77570 /* Build configuration list for PBXNativeTarget "JSON" */ = {
+		13EEC921212A593500B77570 /* Build configuration list for PBXNativeTarget "Austin Weather" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13EEC922212A593500B77570 /* Debug */,
