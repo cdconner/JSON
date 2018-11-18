@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="W3J-wH-21I">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="W3J-wH-21I">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--City Weather-->
+        <!--Weather Table View Controller-->
         <scene sceneID="UT1-I2-48E">
             <objects>
-                <tableViewController id="tzk-2K-vw9" customClass="WeatherTableViewController" customModule="JSON" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="tzk-2K-vw9" customClass="WeatherTableViewController" customModule="Austin_Weather" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="qJx-rX-Liy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="New York" id="H5Q-QT-Yde">
+                        <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Enter A Location" id="H5Q-QT-Yde">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <color key="barTintColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -57,7 +57,7 @@
                             <outlet property="delegate" destination="tzk-2K-vw9" id="e4d-VC-4ZK"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="City Weather" id="try-UK-Dbc"/>
+                    <navigationItem key="navigationItem" id="try-UK-Dbc"/>
                     <connections>
                         <outlet property="searchBar" destination="H5Q-QT-Yde" id="P4B-EJ-VR3"/>
                     </connections>

@@ -17,8 +17,9 @@ class WeatherTableViewController: UITableViewController, UISearchBarDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    
         searchBar.delegate = self
+        navigationItem.title = "Weather App"
         updateWeatherForLocation(location: "Austin, Texas")
     }
 
@@ -35,6 +36,7 @@ class WeatherTableViewController: UITableViewController, UISearchBarDelegate {
     }
 
     func updateWeatherForLocation (location: String) {
+        self.navigationItem.title = location
         CLGeocoder().geocodeAddressString(location) { (placemarks: [CLPlacemark]?, error:Error?) in
             if error == nil {
                 if let location = placemarks?.first?.location {
